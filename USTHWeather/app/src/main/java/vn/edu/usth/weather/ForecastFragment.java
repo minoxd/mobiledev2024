@@ -2,11 +2,15 @@ package vn.edu.usth.weather;
 
 import android.os.Bundle;
 
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -58,9 +62,15 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(0x20FF0000);
-        return view;
+        LinearLayout linearLayout = new LinearLayout(getContext());
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+        linearLayout.setBackgroundColor(0x2000FF00);
+        TextView thursdayTextView = new TextView(getContext());
+        thursdayTextView.setText(R.string.day_thursday);
+        ImageView thursdayImageView = new ImageView(getContext());
+        thursdayImageView.setImageResource(R.drawable.weather);
+        linearLayout.addView(thursdayTextView);
+        linearLayout.addView(thursdayImageView);
+        return linearLayout;
     }
 }
