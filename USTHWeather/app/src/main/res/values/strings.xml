@@ -2,5 +2,20 @@
     <string name="app_name">USTH Weather</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="day_thursday">Thursday</string>
+    <string name="title">USTH Weather</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="contentDescription">this is weather image</string>
+    <string name="mon_details">Partly Cloudy\n24C - 31C</string>
+    <string name="tue_details">Showers\n24C - 30C</string>
+    <string name="wed_details">Rain\n22C - 23C</string>
+    <string name="thu_details">Scattered Showers\n22C - 27C</string>
+    <string name="fri_details">Mostly Cloudy\n22C - 30C</string>
+    <string name="sat_details">Partly Cloudy\n24C - 31C</string>
+    <string name="sun_details">Thunderstorms\n25C - 28C</string>
 </resources>
