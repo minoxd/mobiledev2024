@@ -18,4 +18,6 @@
     <string name="fri_details">Mostly Cloudy\n22C - 30C</string>
     <string name="sat_details">Partly Cloudy\n24C - 31C</string>
     <string name="sun_details">Thunderstorms\n25C - 28C</string>
+    <string name="now_weather">12C\nCloudy</string>
+    <string name="now_location">Hanoi</string>
 </resources>
