@@ -28,16 +28,16 @@ public class WeatherActivity extends AppCompatActivity {
 
         weatherPagerAdapter
                 = new WeatherPagerAdapter(getSupportFragmentManager());
+        viewPager = findViewById(R.id.weather_pager);
+        viewPager.setOffscreenPageLimit(3);
+        viewPager.setAdapter(weatherPagerAdapter);
         tabLayout = findViewById(R.id.weather_tab);
-        tabLayout.setupWithViewPager(viewPager);
         for (int i = 0; i < weatherPagerAdapter.getCount(); i++) {
             tabLayout.addTab(
                     tabLayout.newTab().setText(
                             weatherPagerAdapter.getPageTitle(i)));
         }
-        viewPager = findViewById(R.id.weather_pager);
-        viewPager.setOffscreenPageLimit(3);
-        viewPager.setAdapter(weatherPagerAdapter);
+        tabLayout.setupWithViewPager(viewPager);
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
