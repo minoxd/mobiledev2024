@@ -13,7 +13,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.PagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
+import com.google.android.material.tabs.TabLayout;
+
 public class WeatherActivity extends AppCompatActivity {
+    private TabLayout tabLayout;
     private ViewPager viewPager;
     private PagerAdapter weatherPagerAdapter;
 
@@ -25,6 +28,13 @@ public class WeatherActivity extends AppCompatActivity {
 
         weatherPagerAdapter
                 = new WeatherPagerAdapter(getSupportFragmentManager());
+        tabLayout = findViewById(R.id.weather_tab);
+        tabLayout.setupWithViewPager(viewPager);
+        for (int i = 0; i < weatherPagerAdapter.getCount(); i++) {
+            tabLayout.addTab(
+                    tabLayout.newTab().setText(
+                            weatherPagerAdapter.getPageTitle(i)));
+        }
         viewPager = findViewById(R.id.weather_pager);
         viewPager.setOffscreenPageLimit(3);
         viewPager.setAdapter(weatherPagerAdapter);
