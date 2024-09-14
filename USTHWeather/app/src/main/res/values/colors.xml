@@ -9,4 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="light_blue">#200000FF</color>
     <color name="blue">#DD0000FF</color>
+
+    <color name="forecast_bg">#200000FF</color>
+    <color name="weather_bg">#2000FF00</color>
 </resources>

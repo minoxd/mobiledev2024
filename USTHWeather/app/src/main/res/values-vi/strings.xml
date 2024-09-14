@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <string name="title">USTH Weather</string>
+    <string name="mon">Thứ 2</string>
+    <string name="tue">Thứ 3</string>
+    <string name="wed">Thứ 4</string>
+    <string name="thu">Thứ 5</string>
+    <string name="fri">Thứ 6</string>
+    <string name="sat">Thứ 7</string>
+    <string name="sun">Thứ 8</string>
+    <string name="contentDescription">đây là ảnh thời tết</string>
+    <string name="mon_details">Một phần mây\n24C - 31C</string>
+    <string name="tue_details">Tắm\n24C - 30C</string>
+    <string name="wed_details">Mưa\n22C - 23C</string>
+    <string name="thu_details">Tắm rải rác\n22C - 27C</string>
+    <string name="fri_details">Đa phần mây\n22C - 30C</string>
+    <string name="sat_details">Một phần mây\n24C - 31C</string>
+    <string name="sun_details">Bão sấm\n25C - 28C</string>
+    <string name="now_weather">12C\nMây</string>
+    <string name="now_location">Hà Nội</string>
+</resources>
