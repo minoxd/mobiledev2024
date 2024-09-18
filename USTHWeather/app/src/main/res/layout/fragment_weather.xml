@@ -1,33 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
-    android:background="@drawable/frame_old"
+    android:background="@drawable/frame_new1"
     tools:context=".WeatherFragment">
-    <RelativeLayout
-        android:layout_width="match_parent"
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/weather"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="50dp">
-
-        <ImageView
-            android:layout_width="250dp"
-            android:layout_height="200dp"
-            android:src="@drawable/weather"
-            android:layout_centerInParent="true"
-            android:layout_marginHorizontal="50dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/now_weather"
-            android:textSize="25sp"
-            android:layout_alignParentStart="true"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/now_location"
-            android:textSize="25sp"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
-</FrameLayout>
+        android:text="@string/now_weather"
+        android:textSize="25sp"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/now_location"
+        android:textSize="25sp"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
